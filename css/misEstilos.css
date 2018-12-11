@@ -1,0 +1,275 @@
+/**
+*   Estilo de la paginap predeterminados
+*   Sistemas de Columnas
+*   Algunas posiciones del texto
+*   y margenes
+**/
+html {
+    font-family: Arial;
+    font-weight: 300;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{ margin: 0%; }
+
+footer{ margin: 0%; }
+
+.container{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.texto-center{ text-align: center; }
+
+.interlineado{ line-height: 12%; }
+
+.interlineado-2{ line-height: 32px; }
+
+.texto-left{ text-align: left; }
+
+.texto-right{ text-align: right; }
+
+.lado{ display: inline-flex; }
+
+.row{ display: flex; }
+
+.m-t{ margin-top: 4.7%; }
+
+.m-b{ margin-bottom: 2%; }
+
+.m-r{ margin-right: 2%; }
+
+.p-t-3{ padding-top: 4%; }
+
+.p-r{ padding-right: 5%; }
+
+.p-l{ padding-left: 5%; }
+
+.col-6, .col-3{
+    position: relative;
+    width: 100%;
+}
+
+/**
+*   Configuración de los botones que
+*   estaran por toda la pagina
+**/
+.boton-azul{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 26px;
+    padding-right: 26px;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    background-color: #01b0f3;
+}
+.boton-azul:hover{
+    color: #01b0f3;
+    background-color: white;
+}
+
+/**
+*  Da el color al fondo del logotipo donde van las imagenes
+**/
+.bg-arriba{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: block;
+    background-color: black;
+    padding-top: 1.5%;
+    padding-bottom: 0%; 
+    color: white;
+}
+/**
+*   Panel azul con una marca.
+*   Da el color y ancho
+**/
+.panel-azul{
+    width: 100%;
+    height: 13% auto;
+    padding-top: 0.4%;
+    padding-bottom: 2%;
+    background-color: #01b0f3;
+    color: white;
+}
+
+.manos{
+    max-width: 100%;
+    height: auto;
+}
+
+#color{ background-color: #f1f1f1; }
+.azul-color{ color: #1d3362; }
+.azulclaro-color{ color: #01adef; }
+.blanco-color{ color: white; }
+/**
+*   El panel dividido con video
+**/
+.panel-div{
+    width: 100%;
+    height: auto;
+}
+
+.con-video{
+    width: auto;
+    height: auto;
+    padding: 10%;
+}
+
+.padding{
+    padding-top: 10%;
+    padding-bottom:10%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/**
+*   Estilo del formulario panel
+**/
+.formulario{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 100%;
+    height: 35% auto;
+    background-color: #013162;
+}
+.formulario-grupo{
+    display: block;
+    width: 50%;
+    height: calc(2.25rem + 2px);
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #013162;
+    background-clip: padding-box;
+    border:2px solid #fff;
+    border-radius: 10px;
+}
+/**
+*   Estilo del footer
+*   Asigna Color y ancho
+**/
+.ultimo{
+    width: 100%;
+    height: 30% auto;
+    display: block;
+    background-color: #f1f1f1;
+    padding-bottom: 10%;
+}
+
+.texto-ultimo{
+    font-size: 75%;
+    color: #1d3362;
+    display: inline-flex;
+}
+
+.derecha{
+    text-align: right;
+    padding-right: 5%; 
+}
+
+.somos{ 
+    color: #1d3362;
+    border-bottom: 5px solid #01adef;
+}
+
+/**
+*   Los media para un responsive efectivo
+**/
+
+@media(max-width:768px) and (min-width: 320px) {
+
+    .boton-azul{
+        margin-bottom: 10%;
+    }
+
+    .container{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
+    .bg-arriba{
+        height: auto;
+    }
+
+    .row{
+        display: inline-block;
+    }
+
+    .col-3, .col-6{
+        width: auto;
+    }
+
+    .panel-div{
+        margin: 0;
+        text-align: center;
+        width: auto;
+    }
+
+    .panel-azul{
+        height: auto;
+        display: inline-block;
+    }
+
+    .formulario{
+        height: auto;
+    }
+    .formulario-grupo{
+        width: 100%;
+    }
+    .form-center{
+        text-align: center;
+    }
+
+    .ultimo{
+        display: inline-block;
+        text-align: center;
+        height: auto;
+        padding-bottom: 4%;
+    }
+
+    .m-t-2{ margin-top: 8%; }
+
+    .derecha{
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .texto-ultimo{
+        display: inline-block;
+    }
+}
+
+@media(max-width: 1366px) and (max-width:769px){
+
+    .bg-arriba{
+        height: auto;
+    }
+
+    .manos{
+        width: auto;
+    }
+    .ultimo{
+        padding-bottom: 1%;
+    }
+
+@media(max-width: 1920px) {
+
+    .bg-arriba{
+        height: auto;
+    }
+
+    .manos{
+        height: auto;
+    }
+    .ultimo{
+        height: 15%;
+        padding-bottom: 1%;
+    }
+}    
+}
